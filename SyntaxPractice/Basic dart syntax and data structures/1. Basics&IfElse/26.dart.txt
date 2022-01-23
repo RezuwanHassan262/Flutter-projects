@@ -1,0 +1,16 @@
+import "dart:io";
+
+void main(){
+  print("Insert hours: ");
+  var h = int.parse(stdin.readLineSync()!);
+  if (h <= 40){
+    int s1 = h*200;
+    print("Payment: $s1");
+  }
+  else { 
+    int eh = h-40;
+    int s2 = (eh*300) + 8000;
+    print("Payment: $s2");
+  }
+
+}

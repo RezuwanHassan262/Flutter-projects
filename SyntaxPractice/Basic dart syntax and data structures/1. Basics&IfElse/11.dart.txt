@@ -1,0 +1,17 @@
+import "dart:io";
+
+void main(){
+  print("Insert a number: ");
+  var a =int.parse(stdin.readLineSync()!);
+  print("Insert a number: ");
+  var b = int.parse(stdin.readLineSync()!);
+  print("Insert a number: ");
+  var c = int.parse(stdin.readLineSync()!);
+  print("Insert a number: ");
+  var d = int.parse(stdin.readLineSync()!);
+  print("Insert a number: ");
+  var e = int.parse(stdin.readLineSync()!);
+
+  double avg = (a+b+c+d+e)/5;
+  print("The average of the 5 numbers is = $avg");
+}

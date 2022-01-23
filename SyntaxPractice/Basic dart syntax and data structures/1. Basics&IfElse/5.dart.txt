@@ -1,0 +1,9 @@
+import "dart:io";
+
+void main(){
+  const double pi = 3.1415926535897932;
+  print("Insert radius of the circle: ");
+  var x = int.parse(stdin.readLineSync()!);
+  double area = 2*x*pi;
+  print("The radius of the circle is: $area");
+}

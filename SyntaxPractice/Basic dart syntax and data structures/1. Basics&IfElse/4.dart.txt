@@ -1,0 +1,19 @@
+import "dart:io";
+
+void main(){
+  print("Insert the first number: ");
+  var a = int.parse(stdin.readLineSync()!);
+  print("Insert the second number;");
+  var b = int.parse(stdin.readLineSync()!);
+  int c = a+b;
+  int d = a-b;
+  int e = a*b;
+  double f = a/b;
+  print("The sum of the two numbers is: $c");
+  print("The difference of the two numbers is: $d");
+  print("The product of the two numbers is: $e");
+  print("The division of the two numbers is: $f");
+}
+
+
+

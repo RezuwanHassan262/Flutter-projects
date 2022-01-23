@@ -1,0 +1,17 @@
+import "dart:io";
+
+void main(){
+  print("Insert time in seconds: ");
+  var sec = int.parse(stdin.readLineSync()!);
+  double a = sec/3600;
+  int b = a.floor();
+  int c = b*3600;
+  int d = sec - c;
+
+  double e = d/60;
+  int f = e.floor();
+  int g = f*60;
+  int h = sec -c -g;
+
+  print("$b hours $f minutes $h seconds");
+}

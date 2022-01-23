@@ -1,0 +1,33 @@
+import "dart:io";
+
+void main(){
+  print("Are you below 18 years old? (yes/no): ");
+  String a = stdin.readLineSync()!;
+  if (a=="yes"){
+    print("No Tax");
+  }
+  else{
+    print("Are you the president of the country? (yes/no): ");
+    String p = stdin.readLineSync()!;
+    if (p=="yes"){
+      print("No tax");
+    }
+    else{
+      print("What's your salary?: ");
+      var x = double.parse(stdin.readLineSync()!);
+      if (x<10000){
+        print("No tax");
+      }
+      else if (10000<=x){
+        if (x<=20000){
+          double s = (x*5)/100;
+          print("5% tax of the salary = $s");
+        }
+        else{
+          double s = (x*10)/100;
+          print("10% tax of the salary = $s");
+        }
+      }
+    }
+  }
+}

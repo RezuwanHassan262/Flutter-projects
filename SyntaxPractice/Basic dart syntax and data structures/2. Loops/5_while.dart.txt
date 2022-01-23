@@ -1,0 +1,16 @@
+import "dart:io";
+
+void main(){
+  int i = 0;
+  while(i < 20){
+    print("Insert a number: ");
+    int? x = int.parse(stdin.readLineSync()!);
+    if(x%2==0){
+      print("Even");
+    }
+    else{
+      print("Odd");
+    }
+    i +=1;
+  }
+}

@@ -1,0 +1,26 @@
+import "dart:io";
+
+void main(){
+  print("Insert a number: ");
+  var x  = int.parse(stdin.readLineSync()!);
+  if (x%2==0){
+    if (x==10){
+      print("The number is even and exactly 10");
+    }
+    else if(x>10){
+      print("The number is even and greater than 10");
+    }
+    else{
+      print("The number is even but less than 10");
+    }
+  }
+  else{
+    if(x>10){
+      print("The number is odd and greater than 10");
+    }
+    else{
+      print("The number is odd but less than 10");
+    }
+  }
+  }
+  

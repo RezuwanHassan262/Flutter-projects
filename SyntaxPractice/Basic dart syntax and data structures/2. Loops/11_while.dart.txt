@@ -1,0 +1,8 @@
+import "dart:io";
+void main(){
+  int i = 10;
+  while(i<=50){
+    i%2!=0 ? stdout.write("$i "): "";
+    i +=1;
+    }  
+}

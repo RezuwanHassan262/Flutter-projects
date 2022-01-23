@@ -1,0 +1,12 @@
+import "dart:io";
+
+void main(){
+  print("How many courses?: ");
+  var c1 = int.parse(stdin.readLineSync()!);
+  print("How many credits does each course consist?: ");
+  var c2 = int.parse(stdin.readLineSync()!);
+  print("What is per credit cost?: ");
+  var c3 = int.parse(stdin.readLineSync()!);
+  int p = c3*c2*c1;
+  print("Total payment: $p");
+}

@@ -1,0 +1,19 @@
+import "dart:io";
+
+void main(){
+  print("Insert a number: ");
+  var x = int.parse(stdin.readLineSync()!);
+  print("Insert another number: ");
+  var y = int.parse(stdin.readLineSync()!);
+  if(x>y){
+    int z = x-y;
+    print("The difference between the 2 numbers are $z where $x being greater than $y");
+  }
+  else if(y>x){
+    int z = y-x;
+    print("The difference between the 2 numbers are $z where $y being greater than $x");
+  }
+  else{
+    print("Both numbers are equal");
+  }
+}

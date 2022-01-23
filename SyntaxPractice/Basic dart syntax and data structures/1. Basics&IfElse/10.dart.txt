@@ -1,0 +1,12 @@
+import "dart:io";
+
+void main(){
+  print("Insert a number: ");
+  var x = int.parse(stdin.readLineSync()!);
+  if (x%2== 0){
+    print("The given number $x is even");
+  }
+  else{
+    print("The given number $x is odd");
+  }
+}

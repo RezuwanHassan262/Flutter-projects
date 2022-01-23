@@ -1,0 +1,47 @@
+import "dart:io";
+
+void main(){
+  String a = "Excellent";
+  String b = "Good";
+  String c = "Fair";
+  String d = "Poor";
+  String e = "Failure";
+  print("Insert marks: ");
+  var x = int.parse(stdin.readLineSync()!);
+  if (x>89){
+    print("Grade: A | Point: 4.0 | Comment: $a");
+  }
+  else if (x>84){
+    print("Grade: A- | Point: 3.7 | Comment: $b");
+  }
+  else if(x>79){
+    print("Grade: B+ | Point: 3.3 | Comment: $b");
+  }
+  else if (x>74){
+    print("Grade: B | Point: 3.0 | Comment: $b");
+  }
+  else if(x>69){
+    print("Grade: B- | Point: 2.7 | Comment: $c");
+  }
+  else if (x>64){
+    print("Grade: C+ | Point: 2.3 | Comment: $c");
+  }
+  else if (x>59){
+    print("Grade: C | Point: 2.0 | Comment: $c");
+  }
+  else if(x>56){
+    print("Grade: C- | Point: 1.7 | Comment: $d");
+  }
+  else if (x>54){
+    print("Grade: D+ | Point: 1.3 | Comment: $d");
+  }
+  else if(x>51){
+    print("Grade: D | Point: 1.0 | Comment: $d");
+  }
+  else if(x>49){
+    print("Grade: D- | Point: 0.7 | Comment: $e");
+  }
+  else{
+    print("Grade: F | Point: 0.0 | Comment: $e");
+  }
+}

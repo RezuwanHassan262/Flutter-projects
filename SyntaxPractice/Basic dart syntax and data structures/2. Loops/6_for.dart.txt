@@ -1,0 +1,13 @@
+import "dart:io";
+
+void main(){
+  int i = 0;
+  int s = 0;
+  for(int i = 0;i<20;i++){
+    print("Insert a number: ");
+    int x = int.parse(stdin.readLineSync()!);
+    s = s+x;
+  }
+  double avg = (s/5);
+  print("Average: $avg");
+}

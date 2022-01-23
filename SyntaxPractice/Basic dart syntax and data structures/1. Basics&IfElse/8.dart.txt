@@ -1,0 +1,17 @@
+import "dart:io";
+
+void main(){
+  print("Insert a number: ");
+  var a = int.parse(stdin.readLineSync()!);
+  print("Insert another number: ");
+  var b = int.parse(stdin.readLineSync()!);
+  if(a>b){
+    print("The first number is greater");
+  }
+  else if(a==b){
+    print("Both are equal");
+  }
+  else{
+    print("The second number is equal");
+  }
+}

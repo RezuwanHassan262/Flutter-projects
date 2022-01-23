@@ -1,0 +1,7 @@
+import 'dart:io';
+
+void main(){
+  print("Insert a number: ");
+  var x = int.parse(stdin.readLineSync()!);
+  print("The inserted number was: $x");
+}

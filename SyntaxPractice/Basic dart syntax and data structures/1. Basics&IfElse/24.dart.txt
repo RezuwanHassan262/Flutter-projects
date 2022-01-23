@@ -1,0 +1,16 @@
+import "dart:io";
+
+void main(){
+  print("Insert a number: ");
+  var a = double.parse(stdin.readLineSync()!);
+  print("Insert another number: ");
+  var b = double.parse(stdin.readLineSync()!);
+  double s1 = a+b;
+  double s2 = a+b;
+  double m = a*b;
+  double d = a/b;
+  print("Sum: $s1");
+  print("Difference: $s2");
+  print("Multiplication: $m");
+  print("Division: $d");
+}

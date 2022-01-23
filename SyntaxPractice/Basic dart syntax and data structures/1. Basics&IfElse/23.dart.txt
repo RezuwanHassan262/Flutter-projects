@@ -1,0 +1,10 @@
+import "dart:io";
+
+void main(){
+  print("Insert height: ");
+  var x = int.parse(stdin.readLineSync()!);
+  print("Insert width: ");
+  var y = int.parse(stdin.readLineSync()!);
+  int area = x*y;
+  print("The area of the rectange is: $area");
+}

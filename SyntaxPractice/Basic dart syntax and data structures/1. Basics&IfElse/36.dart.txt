@@ -1,0 +1,28 @@
+import "dart:io";
+
+void main(){
+  print("Grade 1: ");
+  var g1 = double.parse(stdin.readLineSync()!);
+  print("Credit 1: ");
+  var c1 = double.parse(stdin.readLineSync()!);
+
+  print("Grade 2: ");
+  var g2 = double.parse(stdin.readLineSync()!);
+  print("Credit 2: ");
+  var c2 = double.parse(stdin.readLineSync()!);
+
+  print("Grade 3: ");
+  var g3 = double.parse(stdin.readLineSync()!);
+  print("Credit 3: ");
+  var c3 = double.parse(stdin.readLineSync()!);
+
+  print("Grade 4: ");
+  var g4 = double.parse(stdin.readLineSync()!);
+  print("Credit 4: ");
+  var c4 = double.parse(stdin.readLineSync()!);
+  
+  double cgpa = ((c1*g1)+(c2*g2)+(c3*g3)+(c4*g4))/(c1+c2+c3+c4);
+
+  print("CGPA: $cgpa");
+
+}

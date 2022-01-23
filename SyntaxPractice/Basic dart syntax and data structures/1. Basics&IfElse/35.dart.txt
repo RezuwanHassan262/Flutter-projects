@@ -1,0 +1,39 @@
+import "dart:io";
+
+void main(){
+  print("Insert hours: ");
+  var h = int.parse(stdin.readLineSync()!);
+  if (h<=0){
+    print("wrong time");
+  }
+  else if (h >24){
+    print("wrong time");
+  }
+  else if (h < 4){
+    print("wrong time");
+  }
+  else if (h <7){
+    print("Breakfast");
+  }
+  else if (h < 12){
+    print("wrong time");
+  }
+  else if (h <14){
+    print("Lunch");
+  }
+  else if (h < 16){
+    print("wrong time");
+  }
+  else if (h <18){
+    print("Snacks");
+  }
+  else if (h < 19){
+    print("wrong time");
+  }
+  else if (h <21){
+    print("Dinner");
+  }
+  else if (h <= 24){
+    print("wrong time");
+  }
+}

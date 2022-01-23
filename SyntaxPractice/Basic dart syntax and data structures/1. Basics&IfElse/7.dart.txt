@@ -1,0 +1,14 @@
+import "dart:io";
+
+void main(){
+  print("Insert first number: ");
+  var x = int.parse(stdin.readLineSync()!);
+  print("Insert second number: ");
+  var y = int.parse(stdin.readLineSync()!);
+  if(x>y){
+    print("First number is greater");
+  }
+  else{
+    print("First number is not greater");
+  }
+}

@@ -1,0 +1,9 @@
+import "dart:io";
+
+void main(){
+  print("How many articles of the freelance writer were published?: ");
+  var c1 = int.parse(stdin.readLineSync()!);
+  int c2 = 500;
+  int p = c2*c1;
+  print("Total payment: $p");
+}

@@ -1,0 +1,66 @@
+import "dart:io";
+
+void main(){
+  print("Insert the type of number('f&f' or 'other')");
+  String n = stdin.readLineSync()!;
+  print("Insert hours('peak' or 'off peak')");
+  String h = stdin.readLineSync()!;
+  print("Insert time(in minutes)");
+  var t = int.parse(stdin.readLineSync()!);
+  if (n=="f&f"){
+    if (h == "peak"){
+      if (t<=5){
+        int p1 = t*4;
+        print("Call charge: $p1 tk");
+      }
+      else{
+        int ph = 5*4;
+        int et =  t-5;
+        int ex = et*2;
+        int p2 = ex+ph;
+        print("Call charge: $p2 tk");
+      }
+    }
+    else{
+      if (t<=5){
+        int p1 = t*3;
+        print("Call charge: $p1 tk");
+      }
+      else{
+        int ph = 5*3;
+        int et =  t-5;
+        int ex = et*1;
+        int p2 = ex+ph;
+        print("Call charge: $p2 tk");      
+      }
+    }
+  }
+  else{
+    if (h == "peak"){
+      if (t<=5){
+        int p1 = t*7;
+        print("Call charge: $p1 tk");
+      }
+      else{
+        int ph = 5*7;
+        int et =  t-5;
+        int ex = et*6;
+        int p2 = ex+ph;
+        print("Call charge: $p2 tk");
+      }
+    }
+    else{
+      if (t<=5){
+        int p1 = t*8;
+        print("Call charge: $p1 tk");
+      }
+      else{
+        int ph = 5*8;
+        int et =  t-5;
+        int ex = et*5;
+        int p2 = ex+ph;
+        print("Call charge: $p2 tk");
+      }
+    }
+  }
+}

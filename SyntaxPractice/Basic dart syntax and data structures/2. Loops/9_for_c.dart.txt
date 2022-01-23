@@ -1,0 +1,6 @@
+import "dart:io";
+void main(){
+  for(int i = 18; i<= 54;i=i+9){
+    stdout.write("$i ");
+  }
+}

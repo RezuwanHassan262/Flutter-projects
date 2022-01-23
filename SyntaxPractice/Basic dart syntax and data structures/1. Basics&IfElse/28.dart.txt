@@ -1,0 +1,17 @@
+import "dart:io";
+import "dart:math";
+
+void main(){
+  print("Insert the value of S: ");
+  var S = int.parse(stdin.readLineSync()!);
+  var k = pow(S,2);
+  if (S <100){
+    var L = (3000 - 125*k);
+    print("L = $L");
+  }
+  else{
+    double d = 4 + (k/14900);
+    double L =12000/d;
+    print("L = $L");
+  }
+}

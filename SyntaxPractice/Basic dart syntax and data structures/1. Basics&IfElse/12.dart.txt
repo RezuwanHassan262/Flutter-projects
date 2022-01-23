@@ -1,0 +1,9 @@
+import "dart:io";
+
+void main(){
+  int a = 1;
+  int d = 1;
+  int n = 100;
+  double TotalSum = (n/2)*(2*a+((n-1)*d));
+  print("The sum of first 100 positive numbers is $TotalSum");
+}

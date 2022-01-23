@@ -1,0 +1,17 @@
+import "dart:io";
+import "dart:math";
+
+void main(){
+  print("Insert the value of Q: ");
+  var Q = int.parse(stdin.readLineSync()!);
+  var k = pow(Q,2);
+  if (Q <=50){
+    var P = (6000 + 15*k);
+    print("P = $P");
+  }
+  else{
+    double d = 3 + (k/1900);
+    double P =1000/d;
+    print("P = $P");
+  }
+}

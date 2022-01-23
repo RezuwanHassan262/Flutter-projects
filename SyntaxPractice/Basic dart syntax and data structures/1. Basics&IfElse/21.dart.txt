@@ -1,0 +1,24 @@
+import "dart:io";
+
+void main(){
+  print("Insert marks: ");
+  var x = int.parse(stdin.readLineSync()!);
+  if (x>89){
+    print("A");
+  }
+  else if (x>79){
+    print("B");
+  }
+  else if(x>69){
+    print("C");
+  }
+  else if (x>59){
+    print("D");
+  }
+  else if(x>49){
+    print("E");
+  }
+  else{
+    print("F");
+  }
+}

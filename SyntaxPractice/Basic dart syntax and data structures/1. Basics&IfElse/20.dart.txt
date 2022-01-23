@@ -1,0 +1,12 @@
+import "dart:io";
+
+void main(){
+  print("Insert a number: ");
+  var x = int.parse(stdin.readLineSync()!);
+  if (x>50){
+    print("Pass");
+  }
+  else{
+    print("You shall not pass");
+  }
+}

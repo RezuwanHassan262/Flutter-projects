@@ -1,0 +1,15 @@
+import "dart:io";
+import "dart:math";
+
+void main(){
+  print("Side=1 X's value?: ");
+  var x = int.parse(stdin.readLineSync()!); 
+  print("Side=2 Y's value?: ");
+  var y = int.parse(stdin.readLineSync()!); 
+  print("Side=3 Z's value?: ");
+  var z = int.parse(stdin.readLineSync()!); 
+  double s = (x+y+z)/2;
+  double i = s*(s-x)*(s-y)*(s-z);
+  double a = sqrt(i);
+  print("Area: $a");
+}

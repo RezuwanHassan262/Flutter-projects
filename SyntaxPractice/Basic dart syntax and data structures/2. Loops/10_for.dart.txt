@@ -1,0 +1,11 @@
+import "dart:io";
+void main(){
+  print("Insert your favorite car's name: ");
+  String? x = stdin.readLineSync()!;
+  print("Insert a number: ");
+  int? y = int.parse(stdin.readLineSync()!);
+  
+  for(int i = 1; i<= y;i++){
+    print("$x");
+  }
+}

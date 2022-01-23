@@ -1,0 +1,11 @@
+import "dart:io";
+void main(){
+  print("What's the name of your favorite car?: ");
+  String x = stdin.readLineSync()!; 
+  print("Insert a number: ");
+  var n = int.parse(stdin.readLineSync()!); 
+  print("$x");
+  print("$x");
+  print("$x");
+  print("$x");
+}
